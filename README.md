@@ -53,13 +53,13 @@
 
 # References and Links that I plan to use to get the information and create quiz: 
 
-https://www.thehotline.org
-https://www.womenslaw.org/laws/pa 
-https://www.justice.gov/usao-wdtn/victim-witness-program/federal-domestic-violence-laws 
-https://ncadv.org/STATISTICS 
-https://www.safehorizon.org/get-informed/domestic-violence-statistics-facts/ 
-https://www.doorwaysva.org/our-work/education-advocacy/the-facts-about-domestic-violence/
-https://www.nj.gov/dcf/women/domestic/
+1. https://www.thehotline.org
+2. https://www.womenslaw.org/laws/pa 
+3. https://www.justice.gov/usao-wdtn/victim-witness-program/federal-domestic-violence-laws 
+4. https://ncadv.org/STATISTICS 
+5. https://www.safehorizon.org/get-informed/domestic-violence-statistics-facts/ 
+6. https://www.doorwaysva.org/our-work/education-advocacy/the-facts-about-domestic-violence/
+7. https://www.nj.gov/dcf/women/domestic/
 
 # To learn how to get started with contributing to this project, visit the resources below. These files can also be found in the `docs/` directory:
 
