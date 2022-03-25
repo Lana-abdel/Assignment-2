@@ -17,8 +17,8 @@
 
 * [Design Class Diagram](docs/Design_Class_Diagram.jpeg)
 * [Use Case Diagram](docs/Use_Case_Diagram.jpeg)
-* [Use case Description: Read About Domestic Violence](Use_Case_Description1.jpeg.png)
-* [Use case Description: Take A Quiz](docs/Use_Case_Description2.jpeg.png)
+* [Use case Description: Read About Domestic Violence](Use_Case_Description1.jpeg)
+* [Use case Description: Take A Quiz](docs/Use_Case_Description2.jpeg)
 * [System Sequence Diagram](docs/System_Sequence_Diagram.jpeg)
 * [State Chart](docs/State_Chart.jpeg)
 
@@ -26,7 +26,7 @@
 
 ### I will focus on white box and black box testing. I will primarily focus on system testing, which is a black box testing method used to evaluate the completed and integrated system, as a whole, to ensure it meets specified requirements. I will test my quiz system by creating and answering questions as I develop the quiz and ensuring that a correct answer is marked correctly, a wrong answer is marked wrong, and a score is based on how many you got right from the overall number of questions and that the score is correct. To help me with this process (especially white box testing) I will use breakpoints in VS code if I run into any bugs with functionality and calculation to help me retrace and follow through what the code is doing as I develop it, this will overall help me better understand the code and accurately develop test cases for certain functionalities. 
 
-* [Test Design](docs/Test_Design.jpeg.png)
+* [Test Design](docs/Test_Design.jpeg)
 
 
 # The Mockup and the Eight Golden Rules Discussion
