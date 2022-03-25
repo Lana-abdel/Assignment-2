@@ -17,7 +17,7 @@
 
 * [Design Class Diagram](docs/Design_Class_Diagram.jpeg)
 * [Use Case Diagram](docs/Use_Case_Diagram.jpeg)
-* [Use case Description: Read About Domestic Violence](Use_Case_Description1.jpeg)
+* [Use case Description: Read About Domestic Violence](docs/Use_Case_Description1.jpeg)
 * [Use case Description: Take A Quiz](docs/Use_Case_Description2.jpeg)
 * [System Sequence Diagram](docs/System_Sequence_Diagram.jpeg)
 * [State Chart](docs/State_Chart.jpeg)
