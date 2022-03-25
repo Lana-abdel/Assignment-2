@@ -31,13 +31,13 @@
 
 # The Mockup and the Eight Golden Rules Discussion
 ### The first mockup shows the landing page (the welcome page) which will display all the information that is expected to be found on the web application. It also shows the learn more page which is composed of boxes for each topic that will be used as links to other pages so that the information is not cluttered on one page. 
-  * [UI Mockup1](docs/UI_Mockup1.jpeg)
+  * [UI Mockup1](docs/UI_Mockup1.jpg)
 ### The second mockup shows what happens if a user clicks on the hyperlink to learn more about a particular topic and there is an option to take a quiz at the end. It also displays the quiz UI. 
-  * [UI Mockup2](docs/UI_Mockup2.jpeg)
+  * [UI Mockup2](docs/UI_Mockup2.jpg)
 
 ### The last mockup displays the score page which a user will be redirected to after submitting a quiz. 
 
-  * [UI Mockup3](docs/UI_Mockup2.jpeg)
+  * [UI Mockup3](docs/UI_Mockup2.jpg)
 
 ### In order to meet the eight golden rules the mockup will include: 
 
