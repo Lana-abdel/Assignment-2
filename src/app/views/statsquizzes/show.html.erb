@@ -1,0 +1,72 @@
+<!-- <p id="notice"><%= notice %></p> 
+
+
+<p>
+  <strong>Answer 1:</strong>
+  <%= @statsquiz.answer_1 %>
+</p> -->
+
+<p>
+  <strong>Question 1:</strong>
+  <%= question_1() %> <br>
+  <strong>Answer 1:</strong>
+  <%= @statsquiz.answer_1 %>
+  <% if (@statsquiz.correct) %> 
+    correct
+  <% else %> 
+    incorrect
+  <% end %>  
+</p> 
+
+<p>
+  <strong>Answer 2:</strong>
+  <%= @statsquiz.answer_2 %>
+</p>
+
+<p>
+  <strong>Answer 3:</strong>
+  <%= @statsquiz.answer_3 %>
+</p>
+
+<p>
+  <strong>Answer 4:</strong>
+  <%= @statsquiz.answer_4 %>
+</p>
+
+<p>
+  <strong>Answer 5:</strong>
+  <%= @statsquiz.answer_5 %>
+</p>
+
+<p>
+  <strong>Answer 6:</strong>
+  <%= @statsquiz.answer_6 %>
+</p>
+
+<p>
+  <strong>Answer 7:</strong>
+  <%= @statsquiz.answer_7 %>
+</p>
+
+<p>
+  <strong>Answer 8:</strong>
+  <%= @statsquiz.answer_8 %>
+</p>
+
+<p>
+  <strong>Answer 9:</strong>
+  <%= @statsquiz.answer_9 %>
+</p>
+
+<p>
+  <strong>Answer 10:</strong>
+  <%= @statsquiz.answer_10 %>
+</p>
+
+<%= link_to 'Edit', edit_statsquiz_path(@statsquiz) %> |
+<%= link_to 'Back', statsquizzes_path %>
+
+<p>
+points received
+<%= (@statsquiz.points*1.0)/(@statsquiz.total_points*1.0) %> %
+</p>

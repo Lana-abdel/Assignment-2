@@ -1,0 +1,33 @@
+<!--<p id="notice"><%= notice %></p>-->
+
+<p>
+  <strong>Question 1:</strong>
+  <%= question_1() %>
+  <strong>Answer 1:</strong>
+  <%= @quiz1.answer_1 %>
+  <% if (@quiz1.correct_1) %> 
+    correct
+  <% else %> 
+    incorrect
+  <% end %>  
+</p> 
+
+<p>
+  <strong>Answer 2:</strong>
+  <%= @quiz1.answer_2 %>
+  <% if (@quiz1.correct_3) %> 
+    correct
+  <% else %> 
+    incorrect
+  <% end %>  
+</p> 
+
+<p>
+points received
+<%= (@quiz1.points*1.0)/(@quiz1.total_points*1.0) %> %
+</p>
+
+
+
+<%= link_to 'Edit', edit_quiz1_path(@quiz1) %> |
+<%= link_to 'Back', quiz1s_path %>

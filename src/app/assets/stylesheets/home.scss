@@ -22,8 +22,9 @@ section {
   
   .how-it-works .box {
     text-align: left;
-    border-left: 18px solid #f1f1f1;
-    background-color: #fff;
+    border-left: 18px solid #fcc2c2;
+    background-color: #fff; 
+    border-right: 18px solid #fdfdfd;
   }
   
   .box::before {
