@@ -26,7 +26,7 @@
 
 ### I will focus on white box and black box testing. I will primarily focus on system testing, which is a black box testing method used to evaluate the completed and integrated system, as a whole, to ensure it meets specified requirements. I will test my quiz system by creating and answering questions as I develop the quiz and ensuring that a correct answer is marked correctly, a wrong answer is marked wrong, and a score is based on how many you got right from the overall number of questions and that the score is correct. To help me with this process (especially white box testing) I will use breakpoints in VS code if I run into any bugs with functionality and calculation to help me retrace and follow through what the code is doing as I develop it, this will overall help me better understand the code and accurately develop test cases for certain functionalities. 
 
-* [Test Design](docs/Test_Design_updated.png)
+* [Test Design](docs/Test_Design_Updated.png)
 
 
 # The Mockup and the Eight Golden Rules Discussion
@@ -72,8 +72,8 @@
 
 # Open Source Maintenance
 
-* [Research] (docs/OpenSource_Research.md) 
-* [Guidelines_For_This_Project] (docs/openSource_guidelines.md)
+* [Research](docs/OpenSource_Research.md) 
+* [Guidelines_For_This_Project](docs/openSource_guidelines.md)
 
 
 # How Can You Contribute? 
