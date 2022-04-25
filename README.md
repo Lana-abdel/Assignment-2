@@ -73,7 +73,7 @@
 # Open Source Maintenance
 
 * [Research](docs/OpenSource_Research.md) 
-* [Guidelines_For_This_Project](docs/openSource_guidelines.md)
+* [Guidelines For This Project](docs/openSource_guidelines.md)
 
 
 # How Can You Contribute? 
