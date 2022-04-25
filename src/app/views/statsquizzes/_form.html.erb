@@ -3,11 +3,8 @@
 // Description: This project implements a quiz functionality
 // Filename: _form.html.erb
 // Description: This file creates the form for a quiz submission, includes the quiz question and answers. 
-// Last modified on: 04/25/2022 --> 
-
-
-
-%= form_with(model: statsquiz, local: true) do |form| %>
+// Last modified on: 04/25/2022 -->  
+<%= form_with(model: statsquiz, local: true) do |form| %>
   <% if statsquiz.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(statsquiz.errors.count, "error") %> prohibited this statsquiz from being saved:</h2>
@@ -44,11 +41,11 @@
                             <h3>#1. </h3>
                             <div class="field">
                               <%= question_1() %> <br>
-                              <%= form.radio_button(:answer_1, "50") %> 
+                              <%= form.radio_button(:answer_1, "50", required: "required") %> 
                               <%= form.label :answer_1, "50" %> <br>
                               <%= form.radio_button(:answer_1, "10") %> 
                               <%= form.label :answer_1, "10" %><br>
-                              <%= form.radio_button(:answer_1, "20") %> 
+                              <%= form.radio_button(:answer_1, "20", required: "required") %> 
                               <%= form.label :answer_1, "20" %> <br>
                             </div>
                           <br><br>

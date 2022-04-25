@@ -6,8 +6,6 @@
 # Last modified on: 04/25/2022
 =end 
 
-
-
 class LawquizzesController < ApplicationController
   before_action :set_lawquiz, only: %i[ show edit update destroy ]
   skip_before_action :authenticate_user!
@@ -69,7 +67,7 @@ class LawquizzesController < ApplicationController
     end 
     respond_to do |format|
       if @lawquiz.save
-        format.html { redirect_to lawquiz_url(@lawquiz), notice: "Lawquiz was successfully created." }
+        format.html { redirect_to lawquiz_url(@lawquiz), notice: "Lawquiz was successfully submitted." }
         format.json { render :show, status: :created, location: @lawquiz }
       else
         format.html { render :new, status: :unprocessable_entity }

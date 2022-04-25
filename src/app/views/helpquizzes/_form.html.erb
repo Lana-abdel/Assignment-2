@@ -4,11 +4,6 @@
 // Filename: _form.html.erb
 // Description: This file creates the form for a quiz submission, includes the quiz question and answers. 
 // Last modified on: 04/25/2022 --> 
-
-
-
-
-
 <%= form_with(model: helpquiz, local: true) do |form| %>
   <% if helpquiz.errors.any? %>
     <div id="error_explanation">
@@ -46,9 +41,9 @@
                             <h3>#1. </h3>
                             <div class="field">
                               <%= question_1_3() %> <br>
-                              <%= form.radio_button(:answer_1, "True") %> 
+                              <%= form.radio_button(:answer_1, "True",  required: "required") %> 
                               <%= form.label :answer_1, "True" %> <br>
-                              <%= form.radio_button(:answer_1, "False") %> 
+                              <%= form.radio_button(:answer_1, "False",  required: "required") %> 
                               <%= form.label :answer_1, "False" %><br><br>
                             </div>
                           <br><br>

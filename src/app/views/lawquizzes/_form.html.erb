@@ -3,9 +3,7 @@
 // Description: This project implements a quiz functionality
 // Filename: _form.html.erb
 // Description: This file creates the form for a quiz submission, includes the quiz question and answers. 
-// Last modified on: 04/25/2022 --> 
-
-
+// Last modified on: 04/25/2022 -->  
 <%= form_with(model: lawquiz, local: true) do |form| %>
   <% if lawquiz.errors.any? %>
     <div id="error_explanation">
@@ -46,9 +44,9 @@
                               <%= question_1_2() %> <br>
                               <%= form.radio_button(:answer_1, "hitting") %> 
                               <%= form.label :answer_1, "hitting" %> <br>
-                              <%= form.radio_button(:answer_1, "spitting") %> 
+                              <%= form.radio_button(:answer_1, "spitting", required: "required") %> 
                               <%= form.label :answer_1, "spitting" %><br>
-                              <%= form.radio_button(:answer_1, "touching") %> 
+                              <%= form.radio_button(:answer_1, "touching", required: "required") %> 
                               <%= form.label :answer_1, "touching" %> <br>
                             </div>
                           <br><br>
