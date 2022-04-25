@@ -17,18 +17,18 @@ section {
   
   .how-it-works h2 {
     margin-top: 60px;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.7rem;
   }
   
   .how-it-works .box {
     text-align: left;
     border-left: 18px solid #fcc2c2;
     background-color: #fff; 
-    border-right: 18px solid #fdfdfd;
   }
   
   .box::before {
-    content: "\f058";
+    background-image: url(/images/deathpenalty.png);
+    content: "\f06c";
     color: #d60e96;
     font-family: FontAwesome;
     font-weight: 400;
@@ -37,8 +37,9 @@ section {
     position: absolute;
     left: -15px;
     top: 50%;
-    margin-top: -25px;
-    font-size: 2.5rem;
+    margin-top: -55px;
+    font-size: 2.5rem; 
+    
   }
   
   @media (min-width: 600px) {

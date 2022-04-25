@@ -22,15 +22,44 @@ class StatsquizzesController < ApplicationController
   # POST /statsquizzes or /statsquizzes.json
   def create
     @statsquiz = Statsquiz.new(statsquiz_params)
-    if @statsquiz.answer_1 == "mike" 
+    if @statsquiz.answer_1 == "20" 
       @statsquiz.update_attribute(:correct, true)
+      update_points = @statsquiz.points + 2 
+      @statsquiz.update_attribute(:points, update_points)
+    end  
+    if @statsquiz.answer_2 == "sexual violence" 
+      @statsquiz.update_attribute(:correct_2, true)
+      update_points = @statsquiz.points + 2 
+      @statsquiz.update_attribute(:points, update_points)
+      #puts(@stats_quiz.correct_1) 
+    end  
+    if @statsquiz.answer_3 == "7, 25" 
+      @statsquiz.update_attribute(:correct_3, true)
+      update_points = @statsquiz.points + 2 
+      @statsquiz.update_attribute(:points, update_points)
+      #puts(@stats_quiz.correct_1) 
+    end 
+    if @statsquiz.answer_4 == "10" 
+      @statsquiz.update_attribute(:correct_4, true)
+      update_points = @statsquiz.points + 2 
+      @statsquiz.update_attribute(:points, update_points)
+      #puts(@stats_quiz.correct_1) 
+    end 
+    if @statsquiz.answer_5 == "34%" 
+      @statsquiz.update_attribute(:correct_5, true)
+      update_points = @statsquiz.points + 2 
+      @statsquiz.update_attribute(:points, update_points)
+      #puts(@stats_quiz.correct_1) 
+    end 
+    if @statsquiz.answer_6 == "20,000" 
+      @statsquiz.update_attribute(:correct_6, true)
       update_points = @statsquiz.points + 2 
       @statsquiz.update_attribute(:points, update_points)
       #puts(@stats_quiz.correct_1) 
     end 
     respond_to do |format|
       if @statsquiz.save
-        format.html { redirect_to statsquiz_url(@statsquiz), notice: "Statsquiz was successfully created." }
+        format.html { redirect_to statsquiz_url(@statsquiz), notice: "Statsquiz was successfully submitted." }
         format.json { render :show, status: :created, location: @statsquiz }
       else
         format.html { render :new, status: :unprocessable_entity }

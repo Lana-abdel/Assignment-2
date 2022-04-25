@@ -12,6 +12,8 @@ rails server how incoming requests are sent to which controller and method
 # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
 Rails.application.routes.draw do
+  resources :helpquizzes
+  resources :lawquizzes
   resources :statsquizzes
   resources :quiz1s
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
@@ -21,7 +23,8 @@ Rails.application.routes.draw do
   #added two routes
   root 'home#index'
   get 'home/DV'
-  get 'home/stats'
+  get 'home/testimonies'
+  get 'home/resources'
   # Devise authentification pages. This controlls the user login
   # and authentification system.
   devise_for :users

@@ -1,11 +1,3 @@
-<!-- <p id="notice"><%= notice %></p> 
-
-
-<p>
-  <strong>Answer 1:</strong>
-  <%= @statsquiz.answer_1 %>
-</p> -->
-
 <head>
     <!-- Meta tags -->
     <meta charset="utf-8">
@@ -27,8 +19,8 @@
     <div class="row ">
     <div class="text-center col-md-8 mx-auto text-white"> 
     <hr class="divider border border-5"/>
-    <h2 class="mx-4 my-0 text-center"> Score: <%= (@statsquiz.points*1.0) %>/<%= ((@statsquiz.total_points*1.0) %> </h2> <h1> <%= (@statsquiz.points*1.0)*100)/(@statsquiz.total_points*1.0)%> % <br>
-      <%= link_to 'Take Quiz Again', new_statsquiz_path, class:"btn btn-outline image-block-inner text-dark", style: "background-color: white" %> 
+    <h2 class="mx-4 my-0 text-center"> Score: <%= (@helpquiz.points*1.0) %>/<%= (@helpquiz.total_points*1.0) %> </h2> <h1> <%= ((@helpquiz.points*1.0)/(@helpquiz.total_points*1.0))*100%> % <br>
+      <%= link_to 'Take Quiz Again', new_helpquiz_path, class:"btn btn-outline image-block-inner text-dark", style: "background-color: white" %> 
     <hr class="divider border border-5"/> 
     </div></div>
     <ul class="row d-lg-flex list-unstyled image-block justify-content-center px-lg-0 mx-lg-0">
@@ -38,13 +30,13 @@
             <!--<img src="" alt="Picture1" class="img-responsive w-100"></a>-->
           <span class="hp-posts-cat">Question 1. </span>
           <p class="mt-3"><a class="text-dark ">
-            <%= question_1() %> <br> <br>
+            <%= question_1_3() %> <br> <br>
             <strong>Answer 1:</strong>
-            <%= @statsquiz.answer_1 %> <br>
-            <% if (@statsquiz.correct) %> 
+            <%= @helpquiz.answer_1 %> <br>
+            <% if (@helpquiz.correct) %> <br>
             <a class = "text-success"> correct
             <% else %> <br>
-            <a class = "text-danger"> incorrect: The correct answer is 20. 
+            <a class = "text-danger"> incorrect: The correct answer is True. 
             <% end %>  
           </a></p> 
           <!--  <p></p> -->
@@ -56,13 +48,13 @@
             <!--<img src="" alt="Picture2" class="img-responsive w-100"></a> -->
           <span class="hp-posts-cat">Question 2. </span>
           <p class="mt-3"><a class= "text-dark">
-            <%= question_2() %> <br> <br>
+            <%= question_2_3() %> <br> <br>
             <strong>Answer 2:</strong>
-            <%= @statsquiz.answer_2 %> <br>
-            <% if (@statsquiz.correct_2) %> 
+            <%= @helpquiz.answer_2 %> <br>
+            <% if (@helpquiz.correct_2) %> <br>
             <a class = "text-success"> correct
             <% else %> <br>
-            <a class = "text-danger"> incorrect: The correct answer is sexual violence. 
+            <a class = "text-danger"> incorrect: The correct answer is True. 
             <% end %>  
           </a></p>
         </div> <!-- end of box outline -->
@@ -71,15 +63,15 @@
         <div class="image-block-inner", style="background-color: white">
           <a class="mh-110 text-dark">
             <!--<img src="" alt="Picture3" class="img-responsive w-100"></a> -->
-          <span class="hp-posts-cat">3. </span>
+          <span class="hp-posts-cat">Question 3. </span>
           <p class="mt-3"><a class= "text-dark" >
-          <%= question_3() %> <br> <br>
+          <%= question_3_3() %> <br> <br>
             <strong>Answer 3:</strong>
-            <%= @statsquiz.answer_3 %> <br>
-            <% if (@statsquiz.correct_3) %> 
+            <%= @helpquiz.answer_3 %> <br>
+            <% if (@helpquiz.correct_3) %> <br>
             <a class = "text-success"> correct
             <% else %> <br>
-            <a class = "text-danger"> incorrect: The correct answer is 7,25. 
+            <a class = "text-danger"> incorrect: The correct answer False because having bruised arms is a physical warning. 
             <% end %>  
           </a></p>
         </div> <!-- end of box outline -->
@@ -88,15 +80,15 @@
         <div class="image-block-inner", style="background-color: white ">
           <a class="mh-110 text-dark">
             <!--<img src="" alt="Picture3" class="img-responsive w-100"></a> -->
-          <span class="hp-posts-cat">4. </span>
+          <span class="hp-posts-cat">Question 4. </span>
           <p class="mt-3"><a class= "text-dark">
-          <%= question_4() %> <br> <br>
+          <%= question_4_3() %> <br> <br>
             <strong>Answer 4:</strong>
-            <%= @statsquiz.answer_4 %> <br>
-            <% if (@statsquiz.correct_4) %> 
+            <%= @helpquiz.answer_4 %> <br>
+            <% if (@helpquiz.correct_4) %> <br>
             <a class = "text-success"> correct
             <% else %> <br>
-            <a class = "text-danger"> incorrect: The correct answer is 10. 
+            <a class = "text-danger"> incorrect: The correct answer is 'I believe you' . 
             <% end %>  
           </a></p>
         </div> <!-- end of box outline --> 
@@ -104,15 +96,15 @@
         <div class="image-block-inner", style="background-color: white ">
           <a class="mh-110 text-dark">
             <!--<img src="" alt="Picture3" class="img-responsive w-100"></a> -->
-          <span class="hp-posts-cat">5. </span>
+          <span class="hp-posts-cat">Question 5. </span>
           <p class="mt-3"><a class= "text-dark" >
-            <%= question_5() %> <br> <br>
+            <%= question_5_3() %> <br> <br>
             <strong>Answer 5:</strong>
-            <%= @statsquiz.answer_5 %> <br>
-            <% if (@statsquiz.correct_5) %> 
+            <%= @helpquiz.answer_5 %> <br>
+            <% if (@helpquiz.correct_5) %> <br>
             <a class = "text-success"> correct
             <% else %> <br>
-            <a class = "text-danger"> incorrect: The correct answer is 34%. 
+            <a class = "text-danger"> incorrect: The correct answer is validate. 
             <% end %>  
           </a></p>
         </div> <!-- end of box outline -->  
@@ -120,20 +112,20 @@
         <div class="image-block-inner", style="background-color: white ">
           <a class="mh-110 text-dark">
             <!--<img src="" alt="Picture3" class="img-responsive w-100"></a> -->
-          <span class="hp-posts-cat">6. </span>
+          <span class="hp-posts-cat">Question 6. </span>
           <p class="mt-3"><a class= "text-dark" >
-            <%= question_6() %> <br> <br>
+            <%= question_6_3() %> <br> <br>
             <strong>Answer 6:</strong>
-            <%= @statsquiz.answer_6 %> <br>
-            <% if (@statsquiz.correct_6) %> 
+            <%= @helpquiz.answer_6 %> <br>
+            <% if (@helpquiz.correct_6) %>  <br>
             <a class = "text-success"> correct
             <% else %> <br>
-            <a class = "text-danger"> incorrect: The correct answer is 20,000. 
+            <a class = "text-danger"> incorrect: The correct answer is they still love their partner and believe they will change. 
             <% end %>  
           </a></p>
         </div> <!-- end of box outline -->
       </li>
     </ul>
-    <%= link_to 'Back', statsquizzes_path ,  class:"btn btn-outline image-block-inner text-dark", style: "background-color: white" %> 
+    <%= link_to 'Back', helpquizzes_path ,  class:"btn btn-outline image-block-inner text-dark", style: "background-color: white" %> 
   </div> 
 </section> 

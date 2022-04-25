@@ -1,15 +1,15 @@
-<%= form_with(model: statsquiz, local: true) do |form| %>
-  <% if statsquiz.errors.any? %>
+<%= form_with(model: helpquiz, local: true) do |form| %>
+  <% if helpquiz.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(statsquiz.errors.count, "error") %> prohibited this statsquiz from being saved:</h2>
+      <h2><%= pluralize(helpquiz.errors.count, "error") %> prohibited this helpquiz from being saved:</h2>
 
       <ul>
-        <% statsquiz.errors.full_messages.each do |message| %>
+        <% helpquiz.errors.full_messages.each do |message| %>
           <li><%= message %></li>
         <% end %>
       </ul>
     </div>
-  <% end %> 
+  <% end %>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -34,13 +34,11 @@
                         <div>
                             <h3>#1. </h3>
                             <div class="field">
-                              <%= question_1() %> <br>
-                              <%= form.radio_button(:answer_1, "50") %> 
-                              <%= form.label :answer_1, "50" %> <br>
-                              <%= form.radio_button(:answer_1, "10") %> 
-                              <%= form.label :answer_1, "10" %><br>
-                              <%= form.radio_button(:answer_1, "20") %> 
-                              <%= form.label :answer_1, "20" %> <br>
+                              <%= question_1_3() %> <br>
+                              <%= form.radio_button(:answer_1, "True") %> 
+                              <%= form.label :answer_1, "True" %> <br>
+                              <%= form.radio_button(:answer_1, "False") %> 
+                              <%= form.label :answer_1, "False" %><br><br>
                             </div>
                           <br><br>
                         </div>
@@ -51,15 +49,13 @@
                         <div>
                             <h3>#2. </h3> 
                               <div class="field"> 
-                                <%= question_2() %> <br>
-                                <%= form.radio_button(:answer_2, "sexual violence") %> 
-                                <%= form.label :answer_2, "sexual violence" %> <br>
-                                <%= form.radio_button(:answer_2, "rape") %> 
-                                <%= form.label :answer_2, "rape" %><br>
-                                <%= form.radio_button(:answer_2, "assault") %> 
-                                <%= form.label :answer_2, "assault" %> <br>
+                                <%= question_2_3() %> <br>
+                                <%= form.radio_button(:answer_2, "False") %> 
+                                <%= form.label :answer_2, "False" %> <br>
+                                <%= form.radio_button(:answer_2, "True") %> 
+                                <%= form.label :answer_2, "True" %><br> <br>
                               </div>
-                            <br>
+                            <br><br>
                         </div>
                     </div>
                 </div>
@@ -68,13 +64,11 @@
                         <div>
                             <h3>#3. </h3>                            
                             <div class="field"> 
-                                <%= question_3() %> <br>
-                                <%= form.radio_button(:answer_3, "7, 25") %> 
-                                <%= form.label :answer_3, "7, 25" %> <br>
-                                <%= form.radio_button(:answer_3, "7, 30") %> 
-                                <%= form.label :answer_3, "7, 30" %><br>
-                                <%= form.radio_button(:answer_3, "25, 8") %> 
-                                <%= form.label :answer_3, "25, 8" %> <br>
+                                <%= question_3_3() %> <br>
+                                <%= form.radio_button(:answer_3, "True") %> 
+                                <%= form.label :answer_3, "True" %> <br>
+                                <%= form.radio_button(:answer_3, "False") %> 
+                                <%= form.label :answer_3, "False" %><br><br>
                               </div>
                              <br><br>
                         </div>
@@ -86,13 +80,13 @@
                         <div>
                             <h3>#4. </h3>                            
                             <div class="field"> 
-                                <%= question_4() %> <br>
-                                <%= form.radio_button(:answer_4, "16") %> 
-                                <%= form.label :answer_4, "16" %> <br>
-                                <%= form.radio_button(:answer_4, "10") %> 
-                                <%= form.label :answer_4, "10" %><br>
-                                <%= form.radio_button(:answer_4, "25") %> 
-                                <%= form.label :answer_4, "25" %> <br>
+                                <%= question_4_3() %> <br>
+                                <%= form.radio_button(:answer_4, "I do not believe you") %> 
+                                <%= form.label :answer_4, "I do not believe you" %> <br>
+                                <%= form.radio_button(:answer_4, "I believe you") %> 
+                                <%= form.label :answer_4, "I believe you" %><br>
+                                <%= form.radio_button(:answer_4, "Stop Lying") %> 
+                                <%= form.label :answer_4, "Stop Lying" %> <br>
                               </div>
                              <br><br>
                         </div>
@@ -104,13 +98,13 @@
                         <div>
                             <h3>#5. </h3>                            
                             <div class="field"> 
-                                <%= question_5() %> <br>
-                                <%= form.radio_button(:answer_5, "34%") %> 
-                                <%= form.label :answer_5, "34%" %> <br>
-                                <%= form.radio_button(:answer_5, "24%") %> 
-                                <%= form.label :answer_5, "24%" %><br>
-                                <%= form.radio_button(:answer_5, "14%") %> 
-                                <%= form.label :answer_5, "14%" %> <br>
+                                <%= question_5_3() %> <br>
+                                <%= form.radio_button(:answer_5, "invalidate") %> 
+                                <%= form.label :answer_5, "invalidate" %> <br>
+                                <%= form.radio_button(:answer_5, "ignore") %> 
+                                <%= form.label :answer_5, "ignore" %><br>
+                                <%= form.radio_button(:answer_5, "validate") %> 
+                                <%= form.label :answer_5, "validate" %> <br>
                               </div>
                              <br><br>
                         </div>
@@ -122,13 +116,13 @@
                         <div>
                             <h3>#6.</h3>                            
                             <div class="field"> 
-                                <%= question_6() %> <br>
-                                <%= form.radio_button(:answer_6, "15,000") %> 
-                                <%= form.label :answer_6, "15,000" %> <br>
-                                <%= form.radio_button(:answer_6, "20,000") %> 
-                                <%= form.label :answer_6, "20,000" %><br>
-                                <%= form.radio_button(:answer_6, "35,000") %> 
-                                <%= form.label :answer_6, "35,000" %> <br>
+                                <%= question_6_3() %> <br>
+                                <%= form.radio_button(:answer_6, "No reason") %> 
+                                <%= form.label :answer_6, "No reason" %> <br>
+                                <%= form.radio_button(:answer_6, "They still love their partner and believe they will change") %> 
+                                <%= form.label :answer_6, "They still love their partner and believe they will change" %><br>
+                                <%= form.radio_button(:answer_6, "They like being in pain") %> 
+                                <%= form.label :answer_6, "They like being in pain" %> <br>
                               </div>
                              <br><br>
                         </div>
@@ -146,10 +140,7 @@
   </a>
 </div>
 </div>
-
   <div class="actions">
     <%= form.submit "submit quiz", class:"btn btn-lg shadow-lg p-3 mb-5 image-block-inner", style: "background-color: white"  %>
   </div>
 <% end %> 
- 
- 

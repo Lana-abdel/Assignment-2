@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_24_131520) do
+ActiveRecord::Schema.define(version: 2022_04_25_080813) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,51 @@ ActiveRecord::Schema.define(version: 2022_04_24_131520) do
     t.string "logo_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "helpquizzes", force: :cascade do |t|
+    t.string "answer_1"
+    t.string "answer_2"
+    t.string "answer_3"
+    t.string "answer_4"
+    t.string "answer_5"
+    t.string "answer_6"
+    t.string "answer_7"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.boolean "correct", default: false
+    t.float "points", default: 0.0
+    t.float "total_points", default: 12.0
+    t.boolean "correct_2", default: false
+    t.boolean "correct_3", default: false
+    t.boolean "correct_4", default: false
+    t.boolean "correct_5", default: false
+    t.boolean "correct_6", default: false
+  end
+
+  create_table "lawquizzes", force: :cascade do |t|
+    t.string "answer_1"
+    t.string "answer_2"
+    t.string "answer_3"
+    t.string "answer_4"
+    t.string "answer_5"
+    t.string "answer_6"
+    t.string "answer_7"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.boolean "correct", default: false
+    t.float "points", default: 0.0
+    t.float "total_points", default: 12.0
+    t.boolean "correct_2"
+    t.boolean "correct_3"
+    t.boolean "correct_4"
+    t.boolean "correct_5"
+    t.boolean "correct_6"
+    t.boolean "correct_22", default: false
+    t.boolean "correct_32", default: false
+    t.boolean "correct_42", default: false
+    t.boolean "correct_52", default: false
+    t.boolean "correct_62", default: false
   end
 
   create_table "quiz1s", force: :cascade do |t|
@@ -61,6 +106,11 @@ ActiveRecord::Schema.define(version: 2022_04_24_131520) do
     t.boolean "correct", default: false
     t.float "points", default: 0.0
     t.float "total_points", default: 12.0
+    t.boolean "correct_2", default: false
+    t.boolean "correct_3", default: false
+    t.boolean "correct_4", default: false
+    t.boolean "correct_5", default: false
+    t.boolean "correct_6", default: false
   end
 
   create_table "users", force: :cascade do |t|

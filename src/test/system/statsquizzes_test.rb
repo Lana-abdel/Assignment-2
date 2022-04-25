@@ -26,7 +26,7 @@ class StatsquizzesTest < ApplicationSystemTestCase
     fill_in "Answer 9", with: @statsquiz.answer_9
     click_on "Create Statsquiz"
 
-    assert_text "Statsquiz was successfully created"
+    assert_text "Statsquiz was successfully submitted"
     click_on "Back"
   end
 
@@ -46,7 +46,7 @@ class StatsquizzesTest < ApplicationSystemTestCase
     fill_in "Answer 9", with: @statsquiz.answer_9
     click_on "Update Statsquiz"
 
-    assert_text "Statsquiz was successfully updated"
+    assert_text " successfully updated"
     click_on "Back"
   end
 
