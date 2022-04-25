@@ -1,16 +1,25 @@
-# frozen_string_literal: true
+=begin 
+#Project name: Assignment-2  
+#Description: Creating a domestic violence awareness 
+web application with an interactive quiz
+#Filename: routes.rb
+#Description: This file helps define paths by telling the 
+rails server how incoming requests are sent to which controller and method
+#Last modified on: 03-24-2022
+=end 
 
-# This file tells the Rails server how incoming requests are sent to which
-# controller and method.
-#
-#
+# frozen_string_literal: true
 # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   # The root page, e.g. www.example.com/, is sent here
-  # root 'controller#method_in_controller'
+  # root 'controller#method_in_controller' 
+
+  #added two routes
   root 'home#index'
+  get 'home/DV'
+  get 'home/stats'
   # Devise authentification pages. This controlls the user login
   # and authentification system.
   devise_for :users

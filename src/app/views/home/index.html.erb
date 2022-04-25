@@ -1,57 +1,83 @@
-<h1>Home#index</h1>
-<p>
-  Find me at app/views/home/index.html.erb. Make sure to clear out the file
-  before you start working. The other files, _erb, _mvc, _filetree can be deleted.
-</p>
-<h2>This Template</h2>
-<p>
-  This rails 6 template will give you a good starting point when working 
-  on software engineering projects. The following have already been
-  installed and configured...
-  <ul>
-    <li>Rails 6 (the project, at least)</li>
-    <li>Bootstrap 4</li>
-    <li>Devise user authentication system</li>
-    <li>better_errors (replace default error page with a better one)</li>
-    <li>web_console (put <mark><%% console %></mark> in a view to have a console on the page)</li>
-    <li>A basic layout</li>
-    <li>User logins</li>
-  </ul>
-</p>
-<h3>Devise</h3>
-<p>
-  Devise is a user authenitification system for ruby on rails designed around
-  another program called warden. You will not need to change anything regarding
-  its settings unless you are changing login behavior, which is unlikely.
-</p>
-<p>
-  To make a page not require login, add <mark>skip_before_action :authenticate_user!</mark>
-  on top of the controller. To limit it to specific methods of a controller,
-  tack on <mark>only: ['method_name']</mark> at the end of the line.
-  You can add more than one method.
-</p>
-<h3>Bootstrap</h3>
-<p>
-  Bootstrap is a CSS and javascript library made by twitter to "bootstrap"
-  website development. CSS can be very difficult to work with. Bootstrap
-  makes it dramatically easier by giving you an entire library of premade
-  classes. For more details,
-  <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">
-    see the documentation</a>.
-</p>
-<%= render 'mvc' %>
-<%= render 'filetree' %>
-<%= render 'erb' %>
-<hr>
-<p>
-  All in all, use the documentation in this template to your advantage!
-  Stack Overflow has tons of resources for ruby on rails and your upperclassmen
-  peers can probably give you a hand with rails questions should you need it.
-  Plus, if you have a student aid to the class, <i>take advantage of them!</i>
-</p>
-<p>
-  Good luck, and have a great semester!
-</p>
-<p>
-  <i>Ethan Zeigler, '20</i>
-</p>
+<!-- 
+#Project name: Assignment-2  
+#Description: Creating a domestic violence awareness 
+web application with an interactive quiz
+#Filename: index.html.erb
+#Description: This is the html landing page. It provides all the information that can be found
+on the website. 
+#Last modified on: 03-24-2022 */-->
+
+<!--formatting and information for the header -->
+<section class="how-it-works">
+   <div class="container">
+     <div class="row pb-5">
+       <div class="text-center col-md-8 mx-auto">
+         <h2>The Vision</h2>
+         <p>To create an application that allows us to understand the importance of addressing such 
+         issues and educates people more on how prevalent domestic violence is below you will 
+         find information about what this application offers</p>
+       </div>
+     </div>
+    <!--formatting and information for the body and information inside it -->
+     <div class="row content">
+       <div class="row pb-5">
+
+         <div class="col-md-6 mt-2 mt-md-0 p-2 pl-4 box mb-3">
+           <div class="d-flex p-3 bg-white align-items-center justify-content-between">
+             <div class="p-1">
+               <h3 class="h4 mt-3 ">Real Life Testimonies</h3>
+               <p class="mt-3">Learn about domestic violence by reading about real life experiences</p>
+             </div>
+           </div>
+         </div>
+
+         <div class="col-md-6 mt-2 mt-md-0 p-2 pl-4 box mb-3">
+           <div class="d-flex p-3 bg-white align-items-center justify-content-between">
+             <div class="p-1">
+               <h3 class="h4 mt-3 ">The Domestic Violence History and Laws</h3>
+               <p class="mt-3">Learn About Domestic Violence Laws</p>
+             </div>
+           </div>
+         </div>
+
+         <div class="col-md-6 mt-2 mt-md-0 p-2 pl-4 box mb-3">
+           <div class="d-flex p-3 bg-white align-items-center justify-content-between">
+             <div class="p-1">
+               <h3 class="h4 mt-3 ">Statistics and Facts</h3>
+
+               <p class="mt-3">Read About Statistics and facts regarding Domestic Violence </p>
+             </div>
+           </div>
+         </div>
+
+         <div class="col-md-6 mt-2 mt-md-0 p-2 pl-4 box mb-3">
+           <div class="d-flex p-3 bg-white align-items-center justify-content-between">
+             <div class="p-1">
+               <h3 class="h4 mt-3 ">How can you help? </h3>
+               <p class="mt-3">Learn about how you can contirbute to raising awareness? </p>
+             </div>
+           </div>
+         </div>
+
+         <div class="col-md-6 mt-2 mt-md-0 p-2 pl-4 box mb-3">
+           <div class="d-flex p-3 bg-white align-items-center justify-content-between">
+             <div class="p-1">
+               <h3 class="h4 mt-3 ">Take A Quiz</h3>
+               <p class="mt-3">Interact and show how much you've learned by taking quizzes</p>
+             </div>
+           </div>
+         </div>
+
+         <div class="col-md-6 mt-2 mt-md-0 p-2 pl-4 box mb-3">
+           <div class="d-flex p-3 bg-white align-items-center justify-content-between">
+             <div class="p-1">
+               <h3 class="h4 mt-3 ">Links and Resources</h3>
+               <p class="mt-3">Find all the links and resources that were used for this information</p>
+             </div>
+           </div>
+         </div>
+
+       </div>
+     </div>
+   </div>
+ </section>

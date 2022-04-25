@@ -1,3 +1,53 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+ /*
+#Project name: Assignment-2  
+#Description: Creating a domestic violence awareness 
+web application with an interactive quiz
+#Filename: home.scss
+#Description: This page contains the css information for the index.html page which is
+the landing page on the website
+#Last modified on: 03-24-2022 */
+
+section {
+    padding-bottom: 60px;
+    background-color: #f1f1f1;
+  }
+  
+  .how-it-works h2 {
+    margin-top: 60px;
+    margin-bottom: 1.8rem;
+  }
+  
+  .how-it-works .box {
+    text-align: left;
+    border-left: 18px solid #f1f1f1;
+    background-color: #fff;
+  }
+  
+  .box::before {
+    content: "\f058";
+    color: #d60e96;
+    font-family: FontAwesome;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    margin-top: -25px;
+    font-size: 2.5rem;
+  }
+  
+  @media (min-width: 600px) {
+    .how-it-works .d-flex {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .box.col-md-6 {
+      width: 47%;
+      max-width: 47%;
+    }
+  }
