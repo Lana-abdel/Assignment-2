@@ -1,3 +1,13 @@
+=begin 
+# Project name: Assignment-2  
+# Description: This project implements a quiz functionality to educate on domestic violence issues
+#File name: lawquizzes_controller.rb
+# Description: This file controls crud for a quiz
+# Last modified on: 04/25/2022
+=end 
+
+
+
 class LawquizzesController < ApplicationController
   before_action :set_lawquiz, only: %i[ show edit update destroy ]
   skip_before_action :authenticate_user!
