@@ -84,8 +84,8 @@
 ### There are many tasks that can be added to improve and enhance this webapplication. A functionality for users to be able to create their own quizzes and a functionality for users to view the total average of all scores for particular quiz. Implementing user accounts and creating a leader board to help strengthen engagement and participation. These are all potential improvements and enhancements for the web-application. 
 
 # To learn how to get started with contributing to this project, visit the resources below. These files can also be found in the `docs/` directory:
-
-* [Installation Guide](docs/Installation_Guide.md)
+- when it comes to installation, any operating system will work. If you are a tcnj student, use the elsa cluster or use the virtual machine provided in your class. All supporting software, and all the installations and dependencies are listed below: 
+* [Installation Guide](docs/Installation_Guide.md) 
   * [Setting up SSH keys with GitHub](docs/Setting_up_SSH_keys_GitHub.md)
   * [Setting up the correct database](docs/SQLite3_to_Postgres_on_Rails.md)
 * [More helpful information](docs/More_helpful_info.md)
