@@ -40,6 +40,9 @@
                         <div>
                             <h3>#1. </h3>
                             <div class="field">
+                            <!-- this block of code displays the questions and the possible answers, the first question 
+                            is required because without submitting the first one you will have all empty answer. Basically, it is 
+                            required to start a quiz, you don't have to finish it. Approperiate error handling is provided here.-->
                               <%= question_1() %> <br>
                               <%= form.radio_button(:answer_1, "50", required: "required") %> 
                               <%= form.label :answer_1, "50" %> <br>
@@ -58,7 +61,7 @@
                             <h3>#2. </h3> 
                               <div class="field"> 
                                 <%= question_2() %> <br>
-                                <%= form.radio_button(:answer_2, "sexual violence") %> 
+                                <%= form.radio_button(:answer_2, "sexual violence") %>  
                                 <%= form.label :answer_2, "sexual violence" %> <br>
                                 <%= form.radio_button(:answer_2, "rape") %> 
                                 <%= form.label :answer_2, "rape" %><br>

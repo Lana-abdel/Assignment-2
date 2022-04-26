@@ -30,6 +30,7 @@ class StatsquizzesController < ApplicationController
   # POST /statsquizzes or /statsquizzes.json
   def create
     @statsquiz = Statsquiz.new(statsquiz_params)
+    #these if statements calculate points, and help us change the correct varaiable to indicate if the user got it right or not. 
     if @statsquiz.answer_1 == "20" 
       @statsquiz.update_attribute(:correct, true)
       update_points = @statsquiz.points + 2 

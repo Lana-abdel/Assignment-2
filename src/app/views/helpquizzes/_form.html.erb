@@ -38,12 +38,15 @@
                 <div class="item active text-white">
                     <div class="carousel-content">
                         <div>
-                            <h3>#1. </h3>
+                            <h3>#1. </h3> 
+                            <!-- this block of code displays the questions and the possible answers, the first question 
+                            is required because without submitting the first one you will have all empty answer. Basically, it is 
+                            required to start a quiz, you don't have to finish it. Approperiate error handling is provided here. -->
                             <div class="field">
                               <%= question_1_3() %> <br>
                               <%= form.radio_button(:answer_1, "True",  required: "required") %> 
                               <%= form.label :answer_1, "True" %> <br>
-                              <%= form.radio_button(:answer_1, "False",  required: "required") %> 
+                              <%= form.radio_button(:answer_1, "False", required: "required") %> 
                               <%= form.label :answer_1, "False" %><br><br>
                             </div>
                           <br><br>
@@ -55,7 +58,7 @@
                         <div>
                             <h3>#2. </h3> 
                               <div class="field"> 
-                                <%= question_2_3() %> <br>
+                                <%= question_2_3() %> <br> 
                                 <%= form.radio_button(:answer_2, "False") %> 
                                 <%= form.label :answer_2, "False" %> <br>
                                 <%= form.radio_button(:answer_2, "True") %> 

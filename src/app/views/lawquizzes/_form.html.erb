@@ -3,7 +3,8 @@
 // Description: This project implements a quiz functionality
 // Filename: _form.html.erb
 // Description: This file creates the form for a quiz submission, includes the quiz question and answers. 
-// Last modified on: 04/25/2022 -->  
+// Last modified on: 04/25/2022 -->   
+
 <%= form_with(model: lawquiz, local: true) do |form| %>
   <% if lawquiz.errors.any? %>
     <div id="error_explanation">
@@ -40,9 +41,12 @@
                     <div class="carousel-content">
                         <div>
                             <h3>#1. </h3>
-                            <div class="field">
+                            <div class="field"> 
+                            <!-- this block of code displays the questions and the possible answers, the first question 
+                            is required because without submitting the first one you will have all empty answer. Basically, it is 
+                            required to start a quiz, you don't have to finish it. Approperiate error handling is provided here. -->
                               <%= question_1_2() %> <br>
-                              <%= form.radio_button(:answer_1, "hitting") %> 
+                              <%= form.radio_button(:answer_1, "hitting", required: "required") %> 
                               <%= form.label :answer_1, "hitting" %> <br>
                               <%= form.radio_button(:answer_1, "spitting", required: "required") %> 
                               <%= form.label :answer_1, "spitting" %><br>
@@ -59,7 +63,7 @@
                             <h3>#2. </h3> 
                               <div class="field"> 
                                 <%= question_2_2() %> <br>
-                                <%= form.radio_button(:answer_2, "friend") %> 
+                                <%= form.radio_button(:answer_2, "friend") %>  
                                 <%= form.label :answer_2, "friend" %> <br>
                                 <%= form.radio_button(:answer_2, "pet") %> 
                                 <%= form.label :answer_2, "pet" %><br>

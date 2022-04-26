@@ -14,8 +14,9 @@
 
 
 # UML ANALYSIS 
+#### all diagrams have been updated (if need be)
 
-* [Design Class Diagram](docs/Design_Class_Diagram.jpeg)
+* [Design Class Diagram](docs/updated_design_class_diagram.png)
 * [Use Case Diagram](docs/Use_Case_Diagram.jpeg)
 * [Use case Description: Read About Domestic Violence](docs/Use_Case_Description1.jpeg)
 * [Use case Description: Take A Quiz](docs/Use_Case_Description2.jpeg)
@@ -59,7 +60,10 @@
 4. https://ncadv.org/STATISTICS 
 5. https://www.safehorizon.org/get-informed/domestic-violence-statistics-facts/ 
 6. https://www.doorwaysva.org/our-work/education-advocacy/the-facts-about-domestic-violence/
-7. https://www.nj.gov/dcf/women/domestic/ 
+7. https://www.nj.gov/dcf/women/domestic/  
+8. https://www.womenagainstabuse.org/donate 
+9. https://freedomandcitizenship.columbia.edu/ipv-history 
+10. https://www.verywellmind.com/how-to-help-a-victim-of-domestic-violence-66533
 
 # Completed Functionality 
 

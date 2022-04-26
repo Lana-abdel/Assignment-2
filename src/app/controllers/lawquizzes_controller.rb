@@ -30,6 +30,7 @@ class LawquizzesController < ApplicationController
   # POST /lawquizzes or /lawquizzes.json
   def create
     @lawquiz = Lawquiz.new(lawquiz_params)
+    #these if statements calculate points, and help us change the correct varaiable to indicate if the user got it right or not. 
     if @lawquiz.answer_1 == "hitting" 
       @lawquiz.update_attribute(:correct, true)
       update_points = @lawquiz.points + 2 

@@ -29,7 +29,8 @@ class HelpquizzesController < ApplicationController
 
   # POST /helpquizzes or /helpquizzes.json
   def create
-    @helpquiz = Helpquiz.new(helpquiz_params)
+    @helpquiz = Helpquiz.new(helpquiz_params) 
+    #these if statements calculate points, and help us change the correct varaiable to indicate if the user got it right or not. 
     if @helpquiz.answer_1 == "True" 
       @helpquiz.update_attribute(:correct, true)
       update_points = @helpquiz.points + 2 
@@ -106,7 +107,8 @@ class HelpquizzesController < ApplicationController
     end
 
     # Only allow a list of trusted parameters through.
-    def helpquiz_params
-      params.require(:helpquiz).permit(:answer_1, :answer_2, :answer_3, :answer_4, :answer_5, :answer_6, :answer_7)
+    def helpquiz_params 
+      puts(:answer_1)
+      params.require(:helpquiz).permit(:answer_1, :answer_2, :answer_3, :answer_4, :answer_5, :answer_6, :answer_7) 
     end
 end
