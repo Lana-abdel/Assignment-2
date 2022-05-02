@@ -28,4 +28,56 @@
 // The comments at the top of the file, specifically require_tree .
 // and require_self *cannot* be removed.
 
-// Your code here... 
+ /*
+#Project name: Assignment-2  
+#Description: Creating a domestic violence awareness 
+web application with an interactive quiz
+#Filename: application.scss
+#Description: This page contains the css information for the all pages which is
+the landing page on the website
+#Last modified on: 03-24-2022 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+.navbar {
+    background: #301934;
+  }  
+  .navbar-nav
+  {
+    font-size: 20px;
+  } 
+  .image-block li>.image-block-inner:hover {
+    background-color: rgb(246, 195, 203);
+  }  
+  .box2::before {
+    content: "\f06c";
+    color: #d60e96;
+    font-family: FontAwesome;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    margin-top: -25px;
+    font-size: 2.5rem; 
+     
+  } 
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  } 
+  body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+  .footer {
+    grid-row-start: 2;
+    grid-row-end: 3; 
+  } 

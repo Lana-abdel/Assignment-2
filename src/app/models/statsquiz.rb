@@ -1,0 +1,2 @@
+class Statsquiz < ApplicationRecord
+end

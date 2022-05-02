@@ -1,0 +1,163 @@
+<!-- 
+// Project name: Assignment-2
+// Description: This project implements a quiz functionality
+// Filename: _form.html.erb
+// Description: This file creates the form for a quiz submission, includes the quiz question and answers. 
+// Last modified on: 04/25/2022 -->   
+
+<%= form_with(model: lawquiz, local: true) do |form| %>
+  <% if lawquiz.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(lawquiz.errors.count, "error") %> prohibited this lawquiz from being saved:</h2>
+
+      <ul>
+        <% lawquiz.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+<div class= "card px-5 my-3 shadow-lg p-3 mb-5 rounded image-block-inner",  style="background-color: white"  > 
+<div id="carousel-example" class="carousel slide image-block-inner" data-interval="false" style="background-color:  #301934" >  
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> 
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    </ol>
+    <!-- Wrapper for slides --> 
+    <div class="row">
+        <div class="col-xs-offset-3 col-xs-6">
+            <div class="carousel-inner">
+                <div class="item active text-white">
+                    <div class="carousel-content">
+                        <div>
+                            <h3>#1. </h3>
+                            <div class="field"> 
+                            <!-- this block of code displays the questions and the possible answers, the first question 
+                            is required because without submitting the first one you will have all empty answer. Basically, it is 
+                            required to start a quiz, you don't have to finish it. Approperiate error handling is provided here. -->
+                              <%= question_1_2() %> <br>
+                              <%= form.radio_button(:answer_1, "hitting", required: "required") %> 
+                              <%= form.label :answer_1, "hitting" %> <br>
+                              <%= form.radio_button(:answer_1, "spitting", required: "required") %> 
+                              <%= form.label :answer_1, "spitting" %><br>
+                              <%= form.radio_button(:answer_1, "touching", required: "required") %> 
+                              <%= form.label :answer_1, "touching" %> <br>
+                            </div>
+                          <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="item text-white">
+                    <div class="carousel-content">
+                        <div>
+                            <h3>#2. </h3> 
+                              <div class="field"> 
+                                <%= question_2_2() %> <br>
+                                <%= form.radio_button(:answer_2, "friend") %>  
+                                <%= form.label :answer_2, "friend" %> <br>
+                                <%= form.radio_button(:answer_2, "pet") %> 
+                                <%= form.label :answer_2, "pet" %><br>
+                                <%= form.radio_button(:answer_2, "romantic partner") %> 
+                                <%= form.label :answer_2, "romantic partner" %> <br><br>
+                              </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="item text-white">
+                    <div class="carousel-content">
+                        <div>
+                            <h3>#3. </h3>                            
+                            <div class="field"> 
+                                <%= question_3_2() %> <br>
+                                <%= form.radio_button(:answer_3, "telling both parties to cool off ") %> 
+                                <%= form.label :answer_3, "telling both parties to cool off " %> <br>
+                                <%= form.radio_button(:answer_3, "arresting both parties immediately") %> 
+                                <%= form.label :answer_3, "arresting both parties immediately" %><br>
+                                <%= form.radio_button(:answer_3, "They never actually showed up") %> 
+                                <%= form.label :answer_3, "They never actually showed up" %> <br><br>
+                              </div>
+                             <br><br>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="item text-white">
+                    <div class="carousel-content">
+                        <div>
+                            <h3>#4. </h3>                            
+                            <div class="field"> 
+                                <%= question_4_2() %> <br>
+                                <%= form.radio_button(:answer_4, "New Mexico") %> 
+                                <%= form.label :answer_4, "New Mexico" %> <br>
+                                <%= form.radio_button(:answer_4, "Atlanta") %> 
+                                <%= form.label :answer_4, "Atlanta" %><br>
+                                <%= form.radio_button(:answer_4, "New York") %> 
+                                <%= form.label :answer_4, "New York" %> <br><br>
+                              </div>
+                             <br><br>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="item text-white">
+                    <div class="carousel-content">
+                        <div>
+                            <h3>#5. </h3>                            
+                            <div class="field"> 
+                                <%= question_5_2() %> <br>
+                                <%= form.radio_button(:answer_5, "stalking") %> 
+                                <%= form.label :answer_5, "stalking" %> <br>
+                                <%= form.radio_button(:answer_5, "trespassing") %> 
+                                <%= form.label :answer_5, "trespassing" %><br>
+                                <%= form.radio_button(:answer_5, "kidnapping") %> 
+                                <%= form.label :answer_5, "kidnapping" %> <br><br>
+                              </div>
+                             <br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item text-white">
+                    <div class="carousel-content">
+                        <div>
+                            <h3>#6.</h3>                            
+                            <div class="field"> 
+                                <%= question_6_2() %> <br>
+                                <%= form.radio_button(:answer_6, "family loophole") %> 
+                                <%= form.label :answer_6, "family loophole" %> <br>
+                                <%= form.radio_button(:answer_6, "boyfriend loophole") %> 
+                                <%= form.label :answer_6, "boyfriend loophole" %><br>
+                                <%= form.radio_button(:answer_6, "bestfriend loophole") %> 
+                                <%= form.label :answer_6, "bestfriend loophole" %> <br><br>
+                              </div>
+                             <br><br>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Controls --> <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+ <a class="right carousel-control" href="#carousel-example" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+</div>
+  <div class="actions">
+    <%= form.submit "submit quiz", class:"btn btn-lg shadow-lg p-3 mb-5 image-block-inner", style: "background-color: white"  %>
+  </div>
+<% end %> 

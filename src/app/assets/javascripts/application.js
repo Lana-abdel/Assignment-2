@@ -6,7 +6,7 @@ $(function () {
   var lastScrollTop = 0;
   var $navbar = $('.navbar');
 
-  $(window).scroll(function(event){
+  $(window).scroll(function (event) {
     var st = $(this).scrollTop();
 
     if (st > lastScrollTop) { // scroll down
@@ -35,3 +35,4 @@ $(function () {
     lastScrollTop = st;
   });
 });
+

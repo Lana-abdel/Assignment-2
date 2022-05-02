@@ -14,8 +14,9 @@
 
 
 # UML ANALYSIS 
+#### all diagrams have been updated (if need be)
 
-* [Design Class Diagram](docs/Design_Class_Diagram.jpeg)
+* [Design Class Diagram](docs/updated_design_class_diagram.png)
 * [Use Case Diagram](docs/Use_Case_Diagram.jpeg)
 * [Use case Description: Read About Domestic Violence](docs/Use_Case_Description1.jpeg)
 * [Use case Description: Take A Quiz](docs/Use_Case_Description2.jpeg)
@@ -26,7 +27,7 @@
 
 ### I will focus on white box and black box testing. I will primarily focus on system testing, which is a black box testing method used to evaluate the completed and integrated system, as a whole, to ensure it meets specified requirements. I will test my quiz system by creating and answering questions as I develop the quiz and ensuring that a correct answer is marked correctly, a wrong answer is marked wrong, and a score is based on how many you got right from the overall number of questions and that the score is correct. To help me with this process (especially white box testing) I will use breakpoints in VS code if I run into any bugs with functionality and calculation to help me retrace and follow through what the code is doing as I develop it, this will overall help me better understand the code and accurately develop test cases for certain functionalities. 
 
-* [Test Design](docs/Test_Design.jpeg)
+* [Test Design](docs/Test_Design_Updated.png)
 
 
 # The Mockup and the Eight Golden Rules Discussion
@@ -59,11 +60,32 @@
 4. https://ncadv.org/STATISTICS 
 5. https://www.safehorizon.org/get-informed/domestic-violence-statistics-facts/ 
 6. https://www.doorwaysva.org/our-work/education-advocacy/the-facts-about-domestic-violence/
-7. https://www.nj.gov/dcf/women/domestic/
+7. https://www.nj.gov/dcf/women/domestic/  
+8. https://www.womenagainstabuse.org/donate 
+9. https://freedomandcitizenship.columbia.edu/ipv-history 
+10. https://www.verywellmind.com/how-to-help-a-victim-of-domestic-violence-66533
+
+# Completed Functionality 
+
+### All functionality that was proposed has been implemented. A user can view different pages on Domestic Violence depending on the information they want to learn. Additional functionality implemented: instead of one quiz, three quizzes were implemented to increase complexity, challenge the users, and engage them more thoroughly regarding a matter that is sensitive and important such as Domestic Violence.  
+
+# How have I achieved modualrity, efficiency and security? 
+
+### To ensure a modular architecture split up my methods so that every function only does one thing and that will help me develop efficient and elegant algorithms to calculate scores and create quizzes and I made sure to document the code as I develop it so that everything is easy to understand and that the code can be reused and debugged without trouble. I ensured  encapsulation by  using classes to bundle certain attributes and data. This also helps with modularity and ensuring efficiency and ease of use, especially if anyone in future classes wants to contribute to this project. An important aspect of encapsulation is information hiding so I will make sure that certain attributes are private so that ,for example, users are not able to change or edit information on the website, especially editing or changing the quiz functionality (questions, answers etc.) . To achieve security, no private information is asked from the user, users do not have admin permission (if accounts are to be implemented in the future) so that they can not edit existing quizzes. 
+### Because we are using ruby on rails it follows the MVC architecture so another thing that ensures modularity, encapsulation, elegance and efficiency is to  keeping the model, view, and controller and follow good design principles on the project as this architecture allows for reusability, ease of maintenance and improved scalability. For the data structures and database I will be using postgres to implement the quiz functionality, primarily to save and store quiz questions and answers. 
+
+# Open Source Maintenance
+
+* [Research](docs/OpenSource_Research.md) 
+* [Guidelines For This Project](docs/openSource_guidelines.md)
+
+
+# How Can You Contribute? 
+### There are many tasks that can be added to improve and enhance this webapplication. A functionality for users to be able to create their own quizzes and a functionality for users to view the total average of all scores for particular quiz. Implementing user accounts and creating a leader board to help strengthen engagement and participation. These are all potential improvements and enhancements for the web-application. 
 
 # To learn how to get started with contributing to this project, visit the resources below. These files can also be found in the `docs/` directory:
-
-* [Installation Guide](docs/Installation_Guide.md)
+- when it comes to installation, any operating system will work. If you are a tcnj student, use the elsa cluster or use the virtual machine provided in your class. All supporting software, and all the installations and dependencies are listed below: 
+* [Installation Guide](docs/Installation_Guide.md) 
   * [Setting up SSH keys with GitHub](docs/Setting_up_SSH_keys_GitHub.md)
   * [Setting up the correct database](docs/SQLite3_to_Postgres_on_Rails.md)
 * [More helpful information](docs/More_helpful_info.md)

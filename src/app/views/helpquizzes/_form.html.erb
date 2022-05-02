@@ -1,0 +1,155 @@
+<!-- 
+// Project name: Assignment-2
+// Description: This project implements a quiz functionality
+// Filename: _form.html.erb
+// Description: This file creates the form for a quiz submission, includes the quiz question and answers. 
+// Last modified on: 04/25/2022 --> 
+<%= form_with(model: helpquiz, local: true) do |form| %>
+  <% if helpquiz.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(helpquiz.errors.count, "error") %> prohibited this helpquiz from being saved:</h2>
+
+      <ul>
+        <% helpquiz.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+<div class= "card px-5 my-3 shadow-lg p-3 mb-5 rounded image-block-inner",  style="background-color: white"  > 
+<div id="carousel-example" class="carousel slide image-block-inner" data-interval="false" style="background-color:  #301934" >  
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> 
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    </ol>
+    <!-- Wrapper for slides --> 
+    <div class="row">
+        <div class="col-xs-offset-3 col-xs-6">
+            <div class="carousel-inner">
+                <div class="item active text-white">
+                    <div class="carousel-content">
+                        <div>
+                            <h3>#1. </h3> 
+                            <!-- this block of code displays the questions and the possible answers, the first question 
+                            is required because without submitting the first one you will have all empty answer. Basically, it is 
+                            required to start a quiz, you don't have to finish it. Approperiate error handling is provided here. -->
+                            <div class="field">
+                              <%= question_1_3() %> <br>
+                              <%= form.radio_button(:answer_1, "True",  required: "required") %> 
+                              <%= form.label :answer_1, "True" %> <br>
+                              <%= form.radio_button(:answer_1, "False", required: "required") %> 
+                              <%= form.label :answer_1, "False" %><br><br>
+                            </div>
+                          <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="item text-white">
+                    <div class="carousel-content">
+                        <div>
+                            <h3>#2. </h3> 
+                              <div class="field"> 
+                                <%= question_2_3() %> <br> 
+                                <%= form.radio_button(:answer_2, "False") %> 
+                                <%= form.label :answer_2, "False" %> <br>
+                                <%= form.radio_button(:answer_2, "True") %> 
+                                <%= form.label :answer_2, "True" %><br> <br>
+                              </div>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="item text-white">
+                    <div class="carousel-content">
+                        <div>
+                            <h3>#3. </h3>                            
+                            <div class="field"> 
+                                <%= question_3_3() %> <br>
+                                <%= form.radio_button(:answer_3, "True") %> 
+                                <%= form.label :answer_3, "True" %> <br>
+                                <%= form.radio_button(:answer_3, "False") %> 
+                                <%= form.label :answer_3, "False" %><br><br>
+                              </div>
+                             <br><br>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="item text-white">
+                    <div class="carousel-content">
+                        <div>
+                            <h3>#4. </h3>                            
+                            <div class="field"> 
+                                <%= question_4_3() %> <br>
+                                <%= form.radio_button(:answer_4, "I do not believe you") %> 
+                                <%= form.label :answer_4, "I do not believe you" %> <br>
+                                <%= form.radio_button(:answer_4, "I believe you") %> 
+                                <%= form.label :answer_4, "I believe you" %><br>
+                                <%= form.radio_button(:answer_4, "Stop Lying") %> 
+                                <%= form.label :answer_4, "Stop Lying" %> <br><br>
+                              </div>
+                             <br><br>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="item text-white">
+                    <div class="carousel-content">
+                        <div>
+                            <h3>#5. </h3>                            
+                            <div class="field"> 
+                                <%= question_5_3() %> <br>
+                                <%= form.radio_button(:answer_5, "invalidate") %> 
+                                <%= form.label :answer_5, "invalidate" %> <br>
+                                <%= form.radio_button(:answer_5, "ignore") %> 
+                                <%= form.label :answer_5, "ignore" %><br>
+                                <%= form.radio_button(:answer_5, "validate") %> 
+                                <%= form.label :answer_5, "validate" %> <br><br>
+                              </div>
+                             <br><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item text-white">
+                    <div class="carousel-content">
+                        <div>
+                            <h3>#6.</h3>                            
+                            <div class="field"> 
+                                <%= question_6_3() %> <br>
+                                <%= form.radio_button(:answer_6, "No reason") %> 
+                                <%= form.label :answer_6, "No reason" %> <br>
+                                <%= form.radio_button(:answer_6, "They still love their partner and believe they will change") %> 
+                                <%= form.label :answer_6, "They still love their partner and believe they will change" %><br>
+                                <%= form.radio_button(:answer_6, "They like being in pain") %> 
+                                <%= form.label :answer_6, "They like being in pain" %> <br>
+                              </div>
+                             <br><br>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Controls --> <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+ <a class="right carousel-control" href="#carousel-example" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+</div>
+  <div class="actions">
+    <%= form.submit "submit quiz", class:"btn btn-lg shadow-lg p-3 mb-5 image-block-inner", style: "background-color: white"  %>
+  </div>
+<% end %> 

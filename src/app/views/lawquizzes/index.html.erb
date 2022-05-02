@@ -1,0 +1,91 @@
+
+<!-- 
+#Project name: Assignment-2  
+#Description: Creating a domestic violence awareness 
+web application with an interactive quiz
+#Filename: index.html.erb 
+#Description: This contains html for the law and history information page. 
+#Last modified on : 04-25-2022 !-->
+
+
+
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1, 
+        shrink-to-fit=no">
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  
+    <title>Bootstrap 4 Shadow</title>
+</head>
+
+<!--formatting and information for the text to provide hover effects-->
+<section class="news pt-0 bg-white ">
+  <div class="image-block-inner">
+  <div class="card mt-md-5 my-5 shadow-lg p-3 mb-5 rounded", style="background-color: #301934"> 
+    <div class="row ">
+    <div class="text-center col-md-8 mx-auto text-white"> 
+    <hr class="divider border border-5"/>
+    <h2 class="mx-4 my-0 text-center">Laws and History surrounding Domestic Violence: </h2>  <br> 
+      <%= link_to 'Take Quiz', new_lawquiz_path, class:"btn btn-outline image-block-inner text-dark", style: "background-color: white" %> 
+    <hr class="divider border border-5"/> 
+    </div></div> 
+    <%= image_tag "arrest.png", style: "width: 50%;", class: "center"%> 
+    <ul class="row d-lg-flex list-unstyled image-block justify-content-center px-lg-0 mx-lg-0">
+      <li class="col-lg-4 col-md-5 image-block full-width p-3">
+        <div class="image-block-inner", style="background-color: white ">
+          <a class="mh-100 text-dark" >
+            <!--<img src="" alt="Picture1" class="img-responsive w-100"></a>-->
+          <span class="hp-posts-cat">1. </span>
+          <p class="mt-3"><a class="text-dark ">In every U.S. jurisdiction, violent acts such as hitting are criminal felonies or misdemeanors. Some states treat these crimes like any other assault or battery. Other states punish physical contact more harshly when the victim is a romantic partner.</a></p>
+          <!--  <p></p> -->
+        </div> <!-- end of box outline -->
+      </li>
+      <li class="col-lg-4 col-md-5 image-block full-width p-3">
+        <div class="image-block-inner", style="background-color: white">
+          <a class="mh-100 text-dark">
+            <!--<img src="" alt="Picture2" class="img-responsive w-100"></a> -->
+          <span class="hp-posts-cat">2. </span>
+          <p class="mt-3"><a class= "text-dark">Some states treat trespassing, disorderly conduct, and similar crimes as domestic violence when the victim is a romantic partner. Other states have added animal cruelty, harassment, stalking, and cyber stalking to the list of domestic crimes.</a></p>
+        </div> <!-- end of box outline -->
+      </li>
+      <li class="col-lg-4 col-md-5 image-block full-width p-3">
+        <div class="image-block-inner", style="background-color: white">
+          <a class="mh-110 text-dark">
+            <!--<img src="" alt="Picture3" class="img-responsive w-100"></a> -->
+          <span class="hp-posts-cat">3. </span>
+          <p class="mt-3"><a class= "text-dark" >States have also passed laws that tell law enforcement officers how to respond to intimate violence. In decades past, officers called to violent homes would tell abusers to “cool off” but not arrest them. Because the abuser was free, the victim was still in danger. To protect victims, many states have passed mandatory arrest laws. These laws require officers to arrest one or both parties at the scene.</a></p>
+        </div> <!-- end of box outline -->
+      </li> 
+      <li class="col-lg-4 col-md-5 image-block full-width p-3">
+        <div class="image-block-inner", style="background-color: white ">
+          <a class="mh-110 text-dark">
+            <!--<img src="" alt="Picture3" class="img-responsive w-100"></a> -->
+          <span class="hp-posts-cat">4. </span>
+          <p class="mt-3"><a class= "text-dark"> In 1962 domestic violence cases were transferred from Criminal Court to Family Court in New York, making it nearly impossible for perpetrators to be criminalized if he or she assaulted someone.</a></p>
+        </div> <!-- end of box outline --> 
+      <li class="col-lg-4 col-md-5 image-block full-width p-3">
+        <div class="image-block-inner", style="background-color: white ">
+          <a class="mh-110 text-dark">
+            <!--<img src="" alt="Picture3" class="img-responsive w-100"></a> -->
+          <span class="hp-posts-cat">5. </span>
+          <p class="mt-3"><a class= "text-dark" > In 1999 after New Jersey and Pennsylvania added stalking to their definitions of abuse back in 1994, New York State passes a law making stalking a felony.</a></p>
+        </div> <!-- end of box outline -->  
+        </li>
+        <li class="col-lg-4 col-md-5 image-block full-width p-3">
+        <div class="image-block-inner", style="background-color: white ">
+          <a class="mh-110 text-dark">
+            <!--<img src="" alt="Picture3" class="img-responsive w-100"></a> -->
+          <span class="hp-posts-cat">6. </span>
+          <p class="mt-3"><a class= "text-dark" > In 2019 VAWA (Violence Against Women Act) is reauthorized and closes the “boyfriend loophole” by prohibiting those convicted of abusing, assaulting or stalking a current or former dating partner from owning a firearm.</a></p>
+        </div> <!-- end of box outline --> 
+    </li>
+    </ul>
+    <%= link_to 'Back', href= home_DV_path,  class:"btn btn-outline image-block-inner text-dark", style: "background-color: white" %> 
+  </div> 
+</section> 

@@ -5,7 +5,7 @@ web application with an interactive quiz
 #Filename: DV.scss
 #Description: This page contains the css information for the learn more page on
 the website (the DV.html.erb page) 
-#Last modified on: 03-24-2022 */
+#Last modified on: 04-25-2022 */
 
 .container {
     margin-right: auto;
@@ -21,7 +21,7 @@ the website (the DV.html.erb page)
   }
   
   .image-block-inner {
-    box-shadow: 0px 3px 10px 1px rgb(233, 157, 157);
+    box-shadow: 0px 3px 10px 1px rgb(246, 195, 203);
   }
   
   .image-block li>.image-block-inner {
@@ -54,7 +54,7 @@ the website (the DV.html.erb page)
   }
   
   .image-block li>.image-block-inner:hover {
-    background-color: rgb(255, 137, 137);
+    background-color: rgb(246, 195, 203);
   }
   
   .hp-posts-cat {
