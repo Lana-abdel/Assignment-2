@@ -3,7 +3,7 @@ module SurveysHelper
         return "What is your age range? " 
     end  
     def survey_2
-        return "what is your gender? " 
+        return "What is your gender? " 
     end 
     def survey_3
         return "If you were a victim of domestic violence which of the following would you first consider going to for help? " 
