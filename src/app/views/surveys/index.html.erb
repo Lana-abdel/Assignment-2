@@ -5,6 +5,7 @@
 // Description: This is a table display of all the answers for the survey, only admins see this page. 
 // Last modified on: 05/12/2022 --> 
 
+<%# table to hold the responses  %>
 <h1>All Survey Responses</h1>
 <div class = "container center">
 <table class = "table">
@@ -18,7 +19,8 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody> 
+  <%# get all responses for each survey with an option to delete and show the results %>
     <% @surveys.each do |survey| %>
       <tr style="white-space:nowrap">
         <td><%= survey.answer_1 %></td> 
