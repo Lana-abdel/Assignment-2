@@ -16,12 +16,14 @@
 # UML ANALYSIS 
 #### all diagrams have been updated (if need be)
 
-* [Design Class Diagram](docs/updated_design_class_diagram.png)
+ 
+* [Design Class Diagram (updated from the final)](docs/FE-Design_Class_Diagram.png)
 * [Use Case Diagram](docs/Use_Case_Diagram.jpeg)
 * [Use case Description: Read About Domestic Violence](docs/Use_Case_Description1.jpeg)
 * [Use case Description: Take A Quiz](docs/Use_Case_Description2.jpeg)
-* [System Sequence Diagram](docs/System_Sequence_Diagram.jpeg)
+* [System Sequence Diagram (updated from the final)](docs/FE-System_Sequence_Diagram.jpeg)
 * [State Chart](docs/State_Chart.jpeg)
+
 
 # Test Design Discussion
 
