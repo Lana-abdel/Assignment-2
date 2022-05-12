@@ -17,20 +17,12 @@
   
     <title>Bootstrap 4 Shadow</title>
 </head>
-<%= def feedback 
-      if ((@helpquiz.points*1.0)/(@helpquiz.total_points*1.0))*100 > 80.0
-        return "good job"  
-
-      else 
-        return "bad job. try again." 
-      end
-    end  %>
 <!--formatting and information for the text to provide hover effects-->
 <section class="news pt-0 bg-white">
   <div class="image-block-inner">
   <div class="card mt-md-5 my-5 shadow-lg p-3 mb-5 rounded", style="background-color: #301934"> 
     <div class="row ">
-    <div class="text-center col-md-8 mx-auto text-white"> 
+    <div class="text-center col-md-8 mx-auto text-white">  
     <hr class="divider border border-5"/>
     <h2 class="mx-4 my-0 text-center"> Score: <%= (@helpquiz.points*1.0) %>/<%= (@helpquiz.total_points*1.0) %> </h2> <h1> <%= ((@helpquiz.points*1.0)/(@helpquiz.total_points*1.0))*100%> % <br>
       <%= link_to 'Take Quiz Again', new_helpquiz_path, class:"btn btn-outline image-block-inner text-dark", style: "background-color: white" %> 
@@ -135,8 +127,6 @@
       </li>
     </ul> 
     </div>
-      <p>
-      <%= feedback() %> </p>
     <%= link_to 'Back', helpquizzes_path ,  class:"btn btn-outline image-block-inner text-dark", style: "background-color: white" %> 
   </div> 
 </section> 

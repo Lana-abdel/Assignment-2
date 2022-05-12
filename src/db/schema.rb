@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_25_080813) do
+ActiveRecord::Schema.define(version: 2022_05_12_034435) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -111,6 +111,15 @@ ActiveRecord::Schema.define(version: 2022_04_25_080813) do
     t.boolean "correct_4", default: false
     t.boolean "correct_5", default: false
     t.boolean "correct_6", default: false
+  end
+
+  create_table "surveys", force: :cascade do |t|
+    t.string "answer_1"
+    t.string "answer_2"
+    t.string "answer_3"
+    t.string "answer_4"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|

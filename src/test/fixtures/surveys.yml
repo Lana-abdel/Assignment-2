@@ -2,10 +2,12 @@
 
 one:
   answer_1: MyString
-  distractor_11: MyString
-  distractor_21: MyString
+  answer_2: MyString
+  answer_3: MyString
+  answer_4: MyString
 
 two:
   answer_1: MyString
-  distractor_11: MyString
-  distractor_21: MyString
+  answer_2: MyString
+  answer_3: MyString
+  answer_4: MyString
