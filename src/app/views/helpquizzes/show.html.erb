@@ -17,7 +17,14 @@
   
     <title>Bootstrap 4 Shadow</title>
 </head>
+<%= def feedback 
+      if ((@helpquiz.points*1.0)/(@helpquiz.total_points*1.0))*100 > 80.0
+        return "good job"  
 
+      else 
+        return "bad job. try again." 
+      end
+    end  %>
 <!--formatting and information for the text to provide hover effects-->
 <section class="news pt-0 bg-white">
   <div class="image-block-inner">
@@ -126,7 +133,10 @@
           </a></p>
         </div> <!-- end of box outline -->
       </li>
-    </ul>
+    </ul> 
+    </div>
+      <p>
+      <%= feedback() %> </p>
     <%= link_to 'Back', helpquizzes_path ,  class:"btn btn-outline image-block-inner text-dark", style: "background-color: white" %> 
   </div> 
 </section> 

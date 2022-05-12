@@ -110,5 +110,5 @@ class HelpquizzesController < ApplicationController
     def helpquiz_params 
       puts(:answer_1)
       params.require(:helpquiz).permit(:answer_1, :answer_2, :answer_3, :answer_4, :answer_5, :answer_6, :answer_7) 
-    end
+    end 
 end
