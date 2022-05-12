@@ -22,7 +22,7 @@
 * [Use case Description: Read About Domestic Violence](docs/Use_Case_Description1.jpeg)
 * [Use case Description: Take A Quiz](docs/Use_Case_Description2.jpeg)
 * [System Sequence Diagram](docs/System_Sequence_Diagram.jpeg) 
-* [FE-System Sequence Diagram for the survey use case](docs/FE-System_Sequence_Diagram.jpeg)
+* [FE-System Sequence Diagram for the survey use case](docs/FE-System_Sequence_Diagram.png)
 * [State Chart](docs/State_Chart.jpeg)
 
 
