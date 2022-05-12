@@ -1,3 +1,10 @@
+ 
+#  Project name: Assignment-2
+#  Description: This project implements a quiz functionality
+#  Filename: surveys_helper.rb
+#  Description: This file holds the questions for the survey 
+#  Last modified on: 05/12/2022 
+
 module SurveysHelper 
     def survey_1
         return "What is your age range? " 

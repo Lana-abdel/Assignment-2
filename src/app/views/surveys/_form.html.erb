@@ -1,3 +1,11 @@
+<!-- 
+// Project name: Assignment-2
+// Description: This project implements a quiz functionality
+// Filename: _form.html.erb
+// Description: This file creates the form for a survey submission, includes the survey question and possible answers. 
+// Last modified on: 05/12/2022 --> 
+
+
 <%= form_with(model: survey, local: true) do |form| %>
   <% if survey.errors.any? %>
     <div id="error_explanation">

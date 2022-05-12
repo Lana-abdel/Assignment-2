@@ -1,3 +1,4 @@
+
 module StatsquizzesHelper 
     def question_1
         return "How many people on average are physically abused by an intimate partner? " 
