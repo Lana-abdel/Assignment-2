@@ -1,0 +1,47 @@
+<!-- 
+// Project name: Assignment-2
+// Description: This project implements a quiz functionality
+// Filename: show.html.erb
+// Description: This file a user the answers they picked. 
+// Last modified on: 05/12/2022 --> 
+
+
+<br> 
+<%# diplay the table answers that the user just picked with the option of editing them %>
+<section class="news pt-0 bg-white">
+  <div class="image-block-inner">
+  <div class="card mt-md-5 my-5 shadow-lg p-3 mb-5 rounded", style="background-color: #301934"> 
+    <div class="row ">
+      <div class="col-md-8 mx-auto text-white"> 
+        <hr class="divider border border-5"/>
+          <p>
+            <strong><%=survey_1()%></strong>
+            <%= @survey.answer_1 %>
+          </p> 
+          <p>
+            <strong><%=survey_2()%></strong>
+            <%= @survey.answer_2 %>
+          </p>
+
+          <p>
+            <strong><%=survey_3()%></strong>
+            <%= @survey.answer_3 %>
+          </p>
+
+          <p>
+            <strong><%=survey_4()%></strong>
+            <%= @survey.answer_4 %>
+          </p> <hr class="divider border border-5"/>
+          </div></div></div></div>
+
+          <div> 
+          <%# if user is signed in display only the back option %>
+            <% if user_signed_in? %>
+                <%= link_to 'Back', surveys_path ,  class:"btn btn-outline image-block-inner text-dark", style: "background-color: white"  %> 
+            <% else %>
+              <%= link_to 'Edit', edit_survey_path(@survey), class:"btn btn-outline image-block-inner text-dark", style: "background-color: white" %> |
+              <%= link_to 'Back', home_DV_path, class:"btn btn-outline image-block-inner text-dark", style: "background-color: white"%> <br>
+            <% end %>
+          </div> 
+
+

@@ -1,0 +1,66 @@
+<!-- 
+// Project name: Assignment-2
+// Description: This project implements a quiz functionality
+// Filename: _form.html.erb
+// Description: This file creates the form for a survey submission, includes the survey question and possible answers. 
+// Last modified on: 05/12/2022 --> 
+
+
+<%= form_with(model: survey, local: true) do |form| %>
+  <% if survey.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(survey.errors.count, "error") %> prohibited this survey from being saved:</h2>
+
+      <ul>
+        <% survey.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<section class="news pt-0 bg-white">
+  <div class="image-block-inner">
+  <div class="card mt-md-5 my-5 shadow-lg p-3 mb-5 rounded", style="background-color: #301934"> 
+    <div class="row ">
+      <div class="text-center col-md-8 mx-auto text-white"> 
+        <hr class="divider border border-5"/>
+        <h2 class="mx-4 my-0 text-center"> Survey <br> </h2>
+        <hr class="divider border border-5"/> 
+        <p> Help us make a difference </p>
+        <hr class="divider border border-5"/> 
+      </div> </div> <br>
+      <div class = "field text-white" >
+            <%= survey_1() %> <br>
+            <%= form.radio_button(:answer_1, "under 15", required: "required") %> 
+            <%= form.label :answer_1, "under 15" %> <br>
+            <%= form.radio_button(:answer_1, "15-20") %> 
+            <%= form.label :answer_1, "15-20" %><br>
+            <%= form.radio_button(:answer_1, "21 or above") %> 
+            <%= form.label :answer_1, "21 or above" %> <br> <br>
+            <%= survey_2() %> <br>
+            <%= form.radio_button(:answer_2, "Male (including transgender men)", required: "required") %> 
+            <%= form.label :answer_2, "Male (including transgender men)" %> <br>
+            <%= form.radio_button(:answer_2, "Female (including transgender women)", required: "required") %> 
+            <%= form.label :answer_2, "Female (including transgender women)" %><br>
+            <%= form.radio_button(:answer_2, "Prefer to self describe as non-binary, gender-fluid, agender", required: "required") %> 
+            <%= form.label :answer_2, "Prefer to self describe as non-binary, gender-fluid, agender" %> <br> 
+             <%= form.radio_button(:answer_2, "none of the above", required: "required") %> 
+            <%= form.label :answer_2, "None of the above" %> <br> 
+             <%= form.radio_button(:answer_2, "Prefer not to say", required: "required") %> 
+            <%= form.label :answer_2, "Prefer not to say" %> <br> <br>
+            <%= survey_3() %> <br>
+            <%= form.radio_button(:answer_3, "Family member", required: "required") %> 
+            <%= form.label :answer_3, "Family member" %> <br>
+            <%= form.radio_button(:answer_3, "Friend") %> 
+            <%= form.label :answer_3, "Friend" %><br>
+            <%= form.radio_button(:answer_3, "Police") %> 
+            <%= form.label :answer_3, "Police" %> <br> <br> 
+            <%= survey_4() %> <br>
+            <%= form.radio_button(:answer_4, "yes") %> 
+            <%= form.label :answer_4, "yes" %> <br>
+            <%= form.radio_button(:answer_4, "no") %> 
+            <%= form.label :answer_4, "no" %><br><br>
+  <div class="actions">
+    <%= form.submit "submit survey", class:"btn btn-outline image-block-inner text-dark", style: "background-color: white"  %> <br><br>
+  </div> 
+<% end %>
